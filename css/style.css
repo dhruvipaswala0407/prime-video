@@ -10,6 +10,9 @@ img{width:100%;}
 li{list-style-type: none;}
 button{ cursor: pointer;}
 .align-item-center{align-items: baseline;}
+.mr-5{margin-right:5px;}
+.p-relative{position:relative;}
+.p-absolute{position:absolute;}
 .d-flex{
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +21,6 @@ button{ cursor: pointer;}
     position: relative;
     display: inline-block;
 }
-
 .dropdown-menu {
     display: flex;
     position: absolute;
@@ -33,31 +35,25 @@ button{ cursor: pointer;}
     visibility: hidden;
     transition: all 0.2s ease;
 }
-
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
 }
-
 .dropdown-column {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
 }
-
 .dropdown-column:first-child {
     padding-left: 0;
 }
-
 .dropdown-column:last-child {
     padding-right: 0;
 }
-
 .dropdown-column li {
     display: flex;
 }
-
 .dropdown-column li a {
     color: #e2e4e9;
     text-decoration: none;
@@ -69,17 +65,14 @@ button{ cursor: pointer;}
     padding-bottom: 8px;
     transition: all 0.15s ease;
 }
-
 .dropdown-column li a:hover {
     color: #ffffff;
     opacity: 0.8;
 }
-
 .dropdown-section {
     display: flex;
     flex-direction: column;
 }
-
 .section-title {
     color: #8197a4;
     font-size: 12px;
@@ -88,11 +81,9 @@ button{ cursor: pointer;}
     text-transform: uppercase;
     margin: 0 0 16px 0;
 }
-
 .section-columns {
     display: flex;
 }
-
 .dropdown-divider {
     width: 1px;
     background-color: rgba(255, 255, 255, 0.15);
@@ -108,6 +99,10 @@ button{ cursor: pointer;}
     display:flex;
     flex-wrap: wrap;
     padding:0px 20px;
+}
+.header{ 
+    background-color: transparent;
+    position: absolute;
 }
 .section1{
     width:5%;
@@ -138,7 +133,13 @@ button{ cursor: pointer;}
     color:rgb(236, 232, 232);
     font-weight:600;
     font-size:16px;
-    padding:0px 14px;
+    padding:7px 14px;
+    transition:all 0.5s;
+}
+.nav-bar a:hover{
+    background-color: #ffffff;
+    color:black;
+    border-radius: 5px;
 }
 .section3{
     width:25%;
@@ -176,7 +177,6 @@ button{ cursor: pointer;}
     margin:6px 10px 0px 0px;
     text-align: center;
     line-height: center;
-    
 }
 .btn-lang button{
     font-size:12px;
@@ -188,8 +188,6 @@ button{ cursor: pointer;}
 .btn-lang button:hover{
     color: black;
     background-color:#ffffff;
-    transform: scale(1.1,1.1);
-    box-shadow:0 -4px 10px 0 rgba(255, 255, 255);
 }
 .grid button{
     color:white;
@@ -226,4 +224,42 @@ button{ cursor: pointer;}
   box-shadow:0 -4px 28px 0 rgb(26, 152, 255);
   color: white;
   background-color: rgba(26, 152, 255 1);
+}
+.hero-section{
+    width:100%;
+    height:80vh;
+    background-image:url(../image/bg-img.avif);
+    background-size: cover;
+}
+.hero-section .paner{
+    background-color:linear-gradient(90deg,rgba(0, 0, 0, 0.82) 35%, rgba(255, 255, 255, 0) 100%);
+}
+.hero-section .left, .hero-section .right{
+    width:10%;
+    height:80vh;
+    background-color:transparent;
+}
+.hero-section .left button, .hero-section .right button{
+    color:#ffffff;
+    font-size: 2.5rem;
+    line-height:80vh;
+}
+.hero-section .thmblain{
+    width:80%;
+    height: 80vh;
+}
+.thmblain .image{
+    width:50px;
+    height:50px;
+}
+.heding{
+    color:#ffffff;
+    font-size:2.5rem;
+}
+.watch-btn{
+    width:120px;
+    padding:2px 5px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    align-items:baseline;
 }
